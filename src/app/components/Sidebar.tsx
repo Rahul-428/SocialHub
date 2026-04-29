@@ -9,6 +9,7 @@ import {
   MessageSquare 
 } from "lucide-react";
 import { Link, useLocation } from "react-router";
+import profileImg from "../img/profile.png";
 
 export function Sidebar() {
   const location = useLocation();
@@ -61,7 +62,7 @@ export function Sidebar() {
       <div className="p-4 border-t border-gray-200">
         <div className="flex items-center gap-3 p-3 rounded-lg hover:bg-gray-50 cursor-pointer transition-colors">
           <img
-            src="https://images.unsplash.com/photo-1649589244330-09ca58e4fa64?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjB3b21hbiUyMHBvcnRyYWl0fGVufDF8fHx8MTc3NDgwNzI0M3ww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+            src={profileImg}
             alt="User avatar"
             className="w-10 h-10 rounded-full object-cover"
           />

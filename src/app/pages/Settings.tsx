@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { User, Bell, Lock, CreditCard, Instagram, Facebook, Twitter, Linkedin, Globe, Save } from "lucide-react";
-
+import profileImg from "../img/profile.png";
 export default function Settings() {
   const [activeTab, setActiveTab] = useState("profile");
 
@@ -89,8 +89,8 @@ export default function Settings() {
                 {/* Avatar */}
                 <div className="flex items-center gap-6">
                   <img
-                    src="https://images.unsplash.com/photo-1649589244330-09ca58e4fa64?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjB3b21hbiUyMHBvcnRyYWl0fGVufDF8fHx8MTc3NDgwNzI0M3ww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-                    alt="Profile"
+                    src={profileImg}
+                    alt="User avatar"
                     className="w-20 h-20 rounded-full object-cover"
                   />
                   <div>
@@ -134,7 +134,7 @@ export default function Settings() {
                   <label className="block text-sm font-medium text-gray-700 mb-2">Bio</label>
                   <textarea
                     rows={4}
-                    defaultValue="Social media marketing specialist passionate about creating engaging content and building meaningful connections."
+                    defaultValue="UX Engineer and Product Designer with 4+ years of experience designing and developing scalable web platforms, enterprise systems, and mobile-first digital products. Skilled in transforming complex business requirements into intuitive user experiences through user-centered design, front-end development, and design system thinking. Experienced in React-based UI implementation, responsive interface architecture, usability optimization, and cross-functional collaboration with product and engineering teams. Passionate about AI-assisted UX workflows, modern SaaS experiences, and bridging the gap between design and development."
                     className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
                   />
                 </div>
